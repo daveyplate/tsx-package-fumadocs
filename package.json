@@ -21,20 +21,19 @@
   "author": "daveycodez",
   "license": "MIT",
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@stylistic/eslint-plugin": "^3.0.0",
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-hooks-addons": "^0.4.1",
+    "eslint-config-next": "15.1.6",
     "react": "file:../new-tech/node_modules/react",
     "react-dom": "file:../new-tech/node_modules/react-dom",
     "tsc-watch": "^6.2.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.17.0"
+    "next": "^15.1.6"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
