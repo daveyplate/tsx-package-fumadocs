@@ -1,7 +1,7 @@
 {
     "name": "@daveyplate/my-tsx-package-fumadocs",
     "homepage": "https://github.com/daveyplate/my-tsx-package-fumadocs",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "My TSX Package + Fumadocs",
     "module": "dist/index",
     "types": "dist/index",
