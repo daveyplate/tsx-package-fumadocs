@@ -43,7 +43,7 @@ const eslintConfig = [
                 { blankLine: "always", prev: ["case", "default"], next: "*" }
             ],
             "@stylistic/jsx-function-call-newline": ["warn", "always"],
-            "import/order": ["warn", { "newlines-between": "always" }],
+            "import/order": ["warn", { "newlines-between": "always" }]
         }
     }
 ]
