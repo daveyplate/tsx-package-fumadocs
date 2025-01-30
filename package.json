@@ -13,7 +13,7 @@
     "scripts": {
         "build": "tsc",
         "dev": "tsc-watch --onSuccess \"npx eslint\"",
-        "prepublishOnly": "rm -rf dist && npm run build"
+        "prepublishOnly": "rm -rf dist && tsc"
     },
     "keywords": [
         "typescript"
