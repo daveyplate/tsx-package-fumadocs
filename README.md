@@ -1,1 +1,1 @@
-# my-tsx-package-fumadocs
+# tsx-package-fumadocs
