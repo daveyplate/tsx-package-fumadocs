@@ -28,12 +28,13 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
+    "eslint-plugin-import": "^2.31.0",
+    "next": "^15.1.6",
     "react": "file:../new-tech/node_modules/react",
     "react-dom": "file:../new-tech/node_modules/react-dom",
     "tsc-watch": "^6.2.1",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.2",
-    "next": "^15.1.6"
+    "typescript": "^5.6.2"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
