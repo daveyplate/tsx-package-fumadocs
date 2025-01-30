@@ -15,6 +15,9 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    ignores: ["dist", "out", "src/components/ui"],
+  },
+  {
     ...importPlugin.flatConfigs.recommended,
     plugins: {
       "@stylistic": stylistic,
@@ -40,10 +43,7 @@ const eslintConfig = [
         { blankLine: "always", prev: ["case", "default"], next: "*" }
       ],
       "@stylistic/jsx-function-call-newline": ["warn", "always"],
-      "import/order": ["warn", {
-        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
-        "newlines-between": "always",
-      }],
+      "import/order": ["warn", { "newlines-between": "always" }],
     }
   }
 ]

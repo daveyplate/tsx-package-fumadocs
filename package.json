@@ -1,8 +1,8 @@
 {
-  "name": "@daveyplate/my-tsx-package",
-  "homepage": "https://github.com/daveyplate/my-tsx-package",
+  "name": "@daveyplate/my-tsx-package-fumadocs",
+  "homepage": "https://github.com/daveyplate/my-tsx-package-fumadocs",
   "version": "1.0.0",
-  "description": "My TSX Package",
+  "description": "My TSX Package + Fumadocs",
   "module": "dist/index",
   "types": "dist/index",
   "exports": "./dist/index.js",
@@ -34,6 +34,7 @@
     "react-dom": "file:../new-tech/node_modules/react-dom",
     "tsc-watch": "^6.2.1",
     "tsx": "^4.19.2",
+    "turbo": "^2.3.4",
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
