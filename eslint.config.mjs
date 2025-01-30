@@ -15,7 +15,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
     ...compat.extends("next/core-web-vitals", "next/typescript"),
     {
-        ignores: ["dist", "out", "src/components/ui"],
+        ignores: ["dist", "out", "src/components/ui", "docs"],
     },
     {
         ...importPlugin.flatConfigs.recommended,
