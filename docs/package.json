@@ -10,6 +10,7 @@
         "check-types": "tsc --noEmit"
     },
     "dependencies": {
+        "eslint-plugin-import-newlines": "^1.4.0",
         "fumadocs-core": "15.0.0",
         "fumadocs-mdx": "11.3.2",
         "fumadocs-ui": "15.0.0",

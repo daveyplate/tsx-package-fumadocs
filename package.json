@@ -41,5 +41,8 @@
         "react": ">=18.0.0",
         "react-dom": ">=18.0.0"
     },
-    "packageManager": "pnpm@10.1.0"
+    "packageManager": "pnpm@10.1.0",
+    "dependencies": {
+        "eslint-plugin-import-newlines": "^1.4.0"
+    }
 }

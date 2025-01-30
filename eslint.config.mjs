@@ -4,23 +4,21 @@ import { fileURLToPath } from "url"
 import { FlatCompat } from "@eslint/eslintrc"
 import stylistic from "@stylistic/eslint-plugin"
 import importPlugin from "eslint-plugin-import"
+import importNewlinesPlugin from "eslint-plugin-import-newlines"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-})
+const compat = new FlatCompat({ baseDirectory: __dirname, })
 
 const eslintConfig = [
     ...compat.extends("next/core-web-vitals", "next/typescript"),
-    {
-        ignores: ["dist", "out", "src/components/ui", "docs"],
-    },
+    { ignores: ["dist", "out", "src/components/ui", "docs"], },
     {
         ...importPlugin.flatConfigs.recommended,
         plugins: {
             "@stylistic": stylistic,
+            "import-newlines": importNewlinesPlugin
         },
         rules: {
             "@next/next/no-html-link-for-pages": "off",
@@ -35,6 +33,7 @@ const eslintConfig = [
             "@stylistic/jsx-closing-bracket-location": "warn",
             "@stylistic/jsx-self-closing-comp": "warn",
             "@stylistic/no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+            "@stylistic/function-paren-newline": ["warn", "multiline"],
             "@stylistic/padding-line-between-statements": ["warn",
                 { blankLine: "always", prev: "*", next: "return" },
                 { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
@@ -43,7 +42,14 @@ const eslintConfig = [
                 { blankLine: "always", prev: ["case", "default"], next: "*" }
             ],
             "@stylistic/jsx-function-call-newline": ["warn", "always"],
-            "import/order": ["warn", { "newlines-between": "always" }],
+            "import/order": ["warn", {
+                "newlines-between": "always",
+                "alphabetize": { "order": "asc" },
+                "named": true,
+                "warnOnUnassignedImports": true
+            }],
+            "import/newline-after-import": "warn",
+            "import-newlines/enforce": ["warn", { "max-len": 80 }]
         }
     }
 ]

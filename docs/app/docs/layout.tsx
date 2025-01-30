@@ -1,6 +1,6 @@
+import { ThemeToggle } from "fumadocs-ui/components/layout/theme-toggle"
 import { DocsLayout } from "fumadocs-ui/layouts/docs"
 import type { ReactNode } from "react"
-import { ThemeToggle } from "fumadocs-ui/components/layout/theme-toggle"
 
 import { baseOptions } from "@/app/layout.config"
 import { source } from "@/lib/source"
