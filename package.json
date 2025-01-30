@@ -29,6 +29,7 @@
         "eslint": "^9",
         "eslint-config-next": "15.1.6",
         "eslint-plugin-import": "^2.31.0",
+        "packageManager": "pnpm@10.1.0",
         "next": "^15.1.6",
         "react": "file:../new-tech/node_modules/react",
         "react-dom": "file:../new-tech/node_modules/react-dom",
@@ -41,8 +42,5 @@
         "react": ">=18.0.0",
         "react-dom": ">=18.0.0"
     },
-    "packageManager": "pnpm@10.1.0",
-    "dependencies": {
-        "eslint-plugin-import-newlines": "^1.4.0"
-    }
+    "packageManager": "pnpm@10.1.0"
 }
