@@ -5,7 +5,7 @@ import { baseOptions } from "@/app/layout.config"
 
 export default function Layout({ children }: { children: ReactNode }) {
     return (
-        <HomeLayout {...baseOptions}>
+        <HomeLayout {...baseOptions} disableThemeSwitch={true}>
             {children}
         </HomeLayout>
     )
