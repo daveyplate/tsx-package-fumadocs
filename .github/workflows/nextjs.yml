@@ -38,7 +38,7 @@ jobs:
       - name: pnpm-setup
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          package_json_file: docs/package.json
       - name: Detect package manager
         id: detect-package-manager
         run: |
