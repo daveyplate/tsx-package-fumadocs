@@ -20,7 +20,7 @@ export default async function Page(props: {
     const MDX = page.data.body
 
     return (
-        <DocsPage toc={page.data.toc} full={page.data.full}>
+        <DocsPage full={page.data.full} toc={page.data.toc}>
             <DocsTitle>
                 {page.data.title}
             </DocsTitle>

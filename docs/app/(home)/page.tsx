@@ -12,8 +12,8 @@ export default function HomePage() {
                 {" "}
 
                 <Link
-                    href="/docs"
                     className="text-fd-foreground font-semibold underline"
+                    href="/docs"
                 >
                     /docs
                 </Link>
