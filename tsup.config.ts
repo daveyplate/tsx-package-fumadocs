@@ -10,7 +10,7 @@ export default defineConfig((env) => {
         splitting: true,
         cjsInterop: true,
         skipNodeModulesBundle: true,
-        treeshake: false,
+        treeshake: true,
         metafile: true,
         esbuildPlugins: [
             preserveDirectivesPlugin({
