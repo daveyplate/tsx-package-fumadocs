@@ -6,7 +6,7 @@ const withMDX = createMDX()
 const config = {
     reactStrictMode: true,
     output: "export",
-    basePath: process.env.NODE_ENV == "production" ? "/tsx-package-fumadocs" : "",
+    basePath: process.env.NODE_ENV === "production" ? "/tsx-package-fumadocs" : "",
     images: { unoptimized: true }
 }
 

@@ -8,16 +8,10 @@
         "skipLibCheck": true,
         "resolveJsonModule": true,
         "allowJs": true,
-        "incremental": true,
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
-        ],
+        "incremental": false,
+        "lib": ["dom", "dom.iterable", "esnext"],
         "module": "esnext",
-        "moduleResolution": "node"
+        "moduleResolution": "bundler"
     },
-    "include": [
-        "src"
-    ]
+    "include": ["src"]
 }

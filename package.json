@@ -6,41 +6,31 @@
     "module": "dist/index",
     "types": "dist/index",
     "exports": "./dist/index.js",
-    "files": [
-        "src",
-        "dist"
-    ],
+    "files": ["src", "dist"],
     "scripts": {
-        "build": "tsc",
-        "dev": "tsc-watch --onSuccess \"npx eslint\"",
-        "prepublishOnly": "rm -rf dist && tsc"
+        "build": "tsup --clean --dts",
+        "dev": "tsc-watch --onSuccess 'biome check --fix'",
+        "prepublishOnly": "rm -rf dist && tsup --clean --dts"
     },
-    "keywords": [
-        "typescript"
-    ],
+    "keywords": ["typescript"],
     "author": "daveycodez",
     "license": "MIT",
     "devDependencies": {
-        "@eslint/eslintrc": "^3",
-        "@stylistic/eslint-plugin": "^3.0.0",
-        "@types/node": "^22.10.2",
-        "@types/react": "^19.0.8",
-        "@types/react-dom": "^19",
-        "eslint": "^9",
-        "eslint-config-next": "15.1.6",
-        "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-import-newlines": "^1.4.0",
-        "next": "^15.1.6",
-        "react": "file:../new-tech/node_modules/react",
-        "react-dom": "file:../new-tech/node_modules/react-dom",
+        "@types/node": "^22.14.1",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.1.2",
+        "esbuild-plugin-preserve-directives": "^0.0.11",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
         "tsc-watch": "^6.2.1",
-        "tsx": "^4.19.2",
-        "turbo": "^2.3.4",
-        "typescript": "^5.6.2"
+        "tsup": "^8.4.0",
+        "tsx": "^4.19.3",
+        "turbo": "^2.5.0",
+        "typescript": "^5.8.3"
     },
     "peerDependencies": {
         "react": ">=18.0.0",
         "react-dom": ">=18.0.0"
     },
-    "packageManager": "npm@10.9.0"
+    "packageManager": "pnpm@10.8.1"
 }

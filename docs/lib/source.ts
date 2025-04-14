@@ -5,5 +5,5 @@ import { docs, meta } from "@/.source"
 
 export const source = loader({
     baseUrl: "/",
-    source: createMDXSource(docs, meta),
+    source: createMDXSource(docs, meta)
 })

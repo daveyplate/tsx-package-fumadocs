@@ -1,7 +1,3 @@
 export function TestComponent() {
-    return (
-        <>
-            test
-        </>
-    )
+    return <>test</>
 }
