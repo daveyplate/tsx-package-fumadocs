@@ -131,3 +131,8 @@ dist
 .vscode
 .turbo
 .DS_Store
+
+# generated content
+.contentlayer
+.content-collections
+.source
